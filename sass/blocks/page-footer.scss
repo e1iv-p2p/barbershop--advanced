@@ -1,0 +1,18 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #292929;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 640px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+  }
+}

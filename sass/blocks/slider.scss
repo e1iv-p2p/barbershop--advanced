@@ -1,0 +1,63 @@
+.slider__item {
+  display: none;
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__toggles {
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+
+.slider__toggle {
+  position: relative;
+
+  font-size: 0;
+  background: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+
+    border: 2px solid #8f8f8f;
+
+    cursor: pointer;
+
+    transform: rotate(45deg);
+  }
+}
+
+.advantages__toggles .slider__toggle--current {
+  &::before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.reviews__toggles .slider__toggle--current {
+  &::before {
+    background-color: #353535;
+    border-color: #353535;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item {
+    display: block;
+  }
+
+  .slider__toggles {
+    display: none;
+  }
+}

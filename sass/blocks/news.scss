@@ -1,0 +1,35 @@
+.news {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 35px;
+
+  color: #000000;
+  background-color: $crem-white;
+}
+
+.news__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .news {
+    width: 640px;
+  }
+
+  .news__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news {
+    width: 960px;
+  }
+}
